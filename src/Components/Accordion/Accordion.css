@@ -1,0 +1,85 @@
+.accordion {
+  background-color: #F6F6F6;
+  border-radius: 0.4rem;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  background: #FF6060;
+  border-radius: 0.4rem;
+  padding-inline: 0.8rem;
+  padding-block: 0.4rem;
+  cursor: pointer;
+}
+
+.accordion-header__title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  align-self: center;
+}
+
+.accordion-header__icon {
+  display: inline-block;
+  background-image: url("/src/assets/down-arrow.svg");
+  filter: invert(1);
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  align-self: center;
+}
+
+.icon-active {
+  background-image: url("/src/assets/up-arrow.svg");
+}
+
+.accordion-content {
+  display: none;
+  padding: 2rem;
+}
+
+.accordion-content-open {
+  display: block;
+}
+
+.accordion-content__text {
+  color: #FF6060;
+  font-weight: 400;
+}
+
+.accordion-content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .lodging-main > :not(footer) {
+    margin-inline: 10rem; 
+  }
+
+  .accordion {
+    border-radius: 1rem;
+  }
+
+  .accordion-header {
+    border-radius: 1rem;
+    padding-inline: 1.6rem;
+    padding-block: 1.2rem;
+  }
+
+  .accordion-header__icon {
+    background-size: 16px;
+  }
+
+  .accordion-header__title {
+    font-size: 1.8rem;
+  }
+
+  .accordion-content__text {
+    font-size: 18px;
+  }
+}

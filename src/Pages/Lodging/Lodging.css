@@ -1,0 +1,148 @@
+.lodging-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-top: 2.4rem;
+}
+
+.lodging-main > :not(footer) {
+  padding-inline: 2.4rem; 
+}
+
+.lodging-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  justify-content: space-between;
+}
+
+.lodging-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.lodging-info__title {
+  color: #FF6060;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 143%;
+}
+
+.lodging-info__localization {
+  color: #FF6060;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.lodging-info__chips {
+  margin-top: 0.4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.lodging-info__chip {
+  background-color: #FF6060;
+  color: white;
+  font-weight: 500;
+  padding-inline: 1.6rem;
+  padding-block: 0.4rem;
+  border-radius: 999px;
+  font-size: 1rem;
+}
+
+.lodging-ratings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: left;
+}
+
+.lodging-ratings__stars {
+  font-size: 2.4rem;
+  text-align: right;
+}
+
+.lodging-ratings__full-stars {
+  color: #FF6060;
+}
+
+.lodging-ratings__empty-stars {
+  color: #E3E3E3;
+}
+
+.lodging-ratings__owner {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.owner-name {
+  color: #FF6060;
+  align-self: center; 
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 143%;
+}
+
+.owner-picture {
+  border-radius: 999px;
+  width: 3.2rem;
+}
+
+.lodging-accordions {
+  display: flex; 
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .lodging-main {
+    gap: 5.6rem;
+  }
+
+  .lodging-main > :not(footer) {
+    padding-inline: 0; 
+  }
+
+  .lodging-infos {
+    flex-direction: row;
+    gap: 1.6rem;
+  }
+
+  .lodging-info {
+    gap: 1.2rem;
+  }
+
+  .lodging-info__title {
+    font-size: 3.6rem;
+  }
+
+  .lodging-info__localization {
+    font-size: 1.8rem;
+  }
+
+  .lodging-info__chip {
+    padding-block: 0.8rem;
+    padding-inline: 2.4rem;
+    font-size: 1.4rem;
+  }
+
+  .lodging-ratings {
+    flex-direction: column-reverse;
+  }
+
+  .lodging-ratings__stars {
+    font-size: 3.2rem;
+  }
+
+  .owner-name {
+    font-size: 1.8rem;
+  }
+
+  .owner-picture {
+    width: 6.4rem;
+  }
+}

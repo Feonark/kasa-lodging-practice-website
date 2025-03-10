@@ -1,0 +1,51 @@
+.not-found__main {
+  display: flex;
+  flex-direction: column;
+  gap: 11.3rem;
+  color: #FF6060;
+  margin-top: 2.4rem;
+
+}
+
+.not-found__main > :not(footer) {
+  padding-inline: 2.4rem; 
+}
+
+.not-found__title {
+  font-weight: 700;
+  font-size: 9.6rem;
+  align-self: center;
+}
+
+.not-found__text {
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.not-found__link-home {
+  text-decoration: underline;
+  color: #FF6060;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .not-found__main > :not(footer) {
+    margin-inline: 10rem;
+    padding-inline: 0; 
+  }
+
+  .not-found__title {
+    font-size: 28.8rem;
+  }
+
+  .not-found__text {
+    font-size: 3.6rem;
+  }
+
+  .not-found__link-home {
+    font-size: 1.8rem;
+  }
+}

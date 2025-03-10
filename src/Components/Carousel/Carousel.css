@@ -1,0 +1,57 @@
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 24rem;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2.4rem;
+}
+
+.slide-hidden {
+  display: none;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  background-color: rgba(255, 255, 255, 0);
+  border-style: none;
+  border-radius: 2.4rem;
+}
+
+.arrow:focus {
+  border-style: none;
+}
+
+.arrow-left {
+  background-image: url("../../assets/left-arrow.svg");
+  filter: invert(1);
+  background-position: center;
+  background-size: 5.4rem;
+  background-repeat: no-repeat;
+  left: 2.4rem;
+}
+
+.arrow-right {
+  background-image: url("../../assets/right-arrow.svg");
+  filter: invert(1);
+  background-position: center;
+  background-size: 5.4rem;
+  background-repeat: no-repeat;
+  right: 2.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel {
+    height: 41.5rem;
+  }
+}

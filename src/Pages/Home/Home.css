@@ -1,0 +1,100 @@
+.home-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-top: 2.4rem;
+}
+
+.home-main > :not(footer) {
+  margin-inline: 2.4rem; 
+}
+
+.home-header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-image: url('../../assets/cliffs.png');
+  background-size: cover;
+  background-position: bottom; 
+  padding-inline: 1.6rem;
+  padding-block: 3.2rem;
+  border-radius: 1.2rem;
+}
+
+.home-header__title {
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 500;
+  max-width: 220px;
+}
+
+.lodgings-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+}
+
+.lodging-card {
+  display: flex;
+  justify-content: left;
+  align-items: end;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  height: 255px;
+}
+
+.lodging-card__title {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 143%;
+}
+
+@media screen and (min-width: 768px) {
+  .home-main {
+    gap: 5.6rem;
+  }
+
+  .home-main > :not(footer) {
+    margin-inline: 10rem; 
+  }
+
+  .lodgings-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .home-main {
+    gap: 5.6rem;
+  }
+
+  .home-main > :not(footer) {
+    margin-inline: 10rem; 
+  }
+
+  .home-header {
+    justify-content: center;
+    padding-block: 7.8rem;
+  }
+
+  .home-header__title {
+    max-width: none;
+    font-size: 4.8rem;
+    white-space: nowrap;
+  }
+
+  .lodgings-container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5.6rem;
+    background-color: #F6F6F6;
+    border-radius: 2.4rem;
+    gap: 5.2rem;
+  }
+
+  .lodging-card {
+    aspect-ratio: 1/1;
+    height: auto;
+  }
+}

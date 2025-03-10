@@ -1,0 +1,47 @@
+.about-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-top: 2.4rem;
+}
+
+.about-main > :not(footer) {
+  margin-inline: 2.4rem; 
+}
+
+.about-header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-image: url('../../assets/valley.png');
+  background-size: cover;
+  background-position: bottom; 
+  padding-inline: 1.6rem;
+  padding-block: 3.2rem;
+  border-radius: 1.2rem;
+  height: 12rem;
+}
+
+.accordions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .about-main {
+    gap: 5.6rem;
+  }
+
+  .about-main > :not(footer) {
+    margin-inline: 10rem; 
+  }
+
+  .about-header {
+    height: 24rem;
+  }
+
+  .accordions {
+    gap: 2.4rem;
+  }
+}
